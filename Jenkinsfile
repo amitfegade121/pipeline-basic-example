@@ -5,15 +5,21 @@ pipeline {
 	stages {
 		
 		stage('Init') {
-			echo 'Initializing....'
+			steps {
+				echo 'Initializing....'
+			}			
 		}
 		
 		stage('Build') {
-			echo 'Building the project...'
+			steps {
+				echo 'Building the project...'
+			}
 		}
 		
 		stage('Deployment') {
-			echo 'Deploying the project...'
+			steps {
+				echo 'Deploying the project...'
+			}			
 		}
 	
 	}
